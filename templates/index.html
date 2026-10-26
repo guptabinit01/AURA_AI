@@ -1,0 +1,123 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffaf2">
+    <title>AURA_AI | Your AI Companion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="ambient ambient-saffron"></div>
+    <div class="ambient ambient-green"></div>
+
+    <main class="app-shell">
+        <header class="topbar">
+            <a class="brand" href="/">
+                <div class="brand-mark">A<span>✦</span></div>
+                <div>
+                    <div class="brand-name">AURA<span>_AI</span></div>
+                    <div class="brand-subtitle">YOUR INTELLIGENT COMPANION</div>
+                </div>
+            </a>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                AI ASSISTANT
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="chakra" aria-hidden="true">
+                <div class="chakra-inner">✦</div>
+            </div>
+
+            <div class="eyebrow">
+                <span>✦</span> INTELLIGENCE WITHOUT BOUNDARIES
+            </div>
+
+            <h1>Namaste, curious <span>mind.</span></h1>
+
+            <p class="hero-description">
+                Big questions. Fresh ideas. Clear answers.
+                Ask AURA anything and explore something new.
+            </p>
+        </section>
+
+        <section class="chat-card" aria-label="AI conversation">
+            <div class="chat-heading">
+                <div class="assistant-avatar">A</div>
+                <div class="assistant-details">
+                    <strong>AURA Assistant</strong>
+                    <span><i></i> Ready to explore with you</span>
+                </div>
+                <button id="clear-chat" class="clear-button" type="button">
+                    New chat ↗
+                </button>
+            </div>
+
+            <div id="chat-messages" class="chat-messages" aria-live="polite">
+                <div class="message assistant-message">
+                    <div class="message-avatar">A</div>
+                    <div class="message-content">
+                        <div class="message-label">AURA_AI</div>
+                        <div class="message-bubble">
+                            Hello! 👋 I'm AURA_AI. Ask me about science,
+                            technology, education, coding, or anything you're
+                            curious about. Let's figure it out together!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggestions-heading">NEED SOME INSPIRATION?</div>
+            <div class="suggestions">
+                <button class="suggestion" type="button"
+                    data-question="Explain artificial intelligence in simple words.">
+                    ✨ Explain AI
+                </button>
+                <button class="suggestion" type="button"
+                    data-question="Teach me something fascinating about space.">
+                    🌌 Explore space
+                </button>
+                <button class="suggestion" type="button"
+                    data-question="Give me a useful Python coding tip for beginners.">
+                    💻 Learn coding
+                </button>
+            </div>
+
+            <form id="chat-form" class="composer">
+                <textarea
+                    id="question-input"
+                    name="question"
+                    placeholder="Ask anything... your curiosity starts here"
+                    rows="1"
+                    maxlength="5000"
+                    aria-label="Type your question"
+                    required
+                ></textarea>
+                <button id="send-button" type="submit" aria-label="Send question">
+                    <span>Ask AI</span>
+                    <span class="send-arrow">↗</span>
+                </button>
+            </form>
+
+            <div class="composer-footer">
+                <span>↵ Enter to ask · Shift + Enter for a new line</span>
+                <span>Made with curiosity <b>♥</b></span>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <span class="footer-symbol">✦</span>
+            BUILT FOR CURIOUS MINDS
+            <span class="footer-divider">·</span>
+            POWERED BY AI
+            <p>AI can make mistakes. Verify important information.</p>
+        </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+memory.txt
+test_openai.py
+test_openrouter.py
+main.py
+local_brain.py
+learning_brain.py
+knowledge.txt
+templates/static/
